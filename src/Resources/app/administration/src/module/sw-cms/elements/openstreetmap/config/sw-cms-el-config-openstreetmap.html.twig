@@ -1,0 +1,59 @@
+{% block sw_cms_element_openstreetmap_config %}
+    <div class="sw-cms-el-config-openstreetmap__coordinates">
+        <sw-text-field
+            v-model="longitude"
+            class="sweb-openstreetmap-field longitude"
+            :label="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.longitudeLabel')"
+            :placeholder="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.longitudePlaceholder')"
+            @update:value="value => onElementUpdate('longitude', value)">
+        </sw-text-field>
+
+        <sw-text-field
+            v-model="latitude"
+            class="sweb-openstreetmap-field latitude"
+            :label="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.latitudeLabel')"
+            :placeholder="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.latitudePlaceholder')"
+            @update:value="value => onElementUpdate('latitude', value)">
+        </sw-text-field>
+    </div>
+
+    <sw-text-field
+        v-model="zoom"
+        class="sweb-openstreetmap-field zoom"
+        :label="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.zoomLabel')"
+        :placeholder="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.zoomPlaceholder')"
+        @update:value="value => onElementUpdate('zoom', value)">
+    </sw-text-field>
+
+    <sw-text-field
+        v-model="name"
+        class="sweb-openstreetmap-field name"
+        :label="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.nameLabel')"
+        :placeholder="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.namePlaceholder')"
+        @update:value="value => onElementUpdate('name', value)">
+    </sw-text-field>
+
+    <sw-text-field
+        v-model="street"
+        class="sweb-openstreetmap-field street"
+        :label="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.streetLabel')"
+        :placeholder="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.streetPlaceholder')"
+        @update:value="value => onElementUpdate('street', value)">
+    </sw-text-field>
+
+    <sw-text-field
+        v-model="city"
+        class="sweb-openstreetmap-field city"
+        :label="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.cityLabel')"
+        :placeholder="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.cityPlaceholder')"
+        @update:value="value => onElementUpdate('city', value)">
+    </sw-text-field>
+
+    <sw-text-field
+        v-model="logo"
+        class="sweb-openstreetmap-field logo"
+        :label="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.logoLabel')"
+        :placeholder="$tc('sweb-cms-blocks.elements.customOpenStreetMapElement.config.logoPlaceholder')"
+        @update:value="value => onElementUpdate('logo', value)">
+    </sw-text-field>
+{% endblock %}
