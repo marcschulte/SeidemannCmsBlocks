@@ -1,0 +1,9 @@
+{% block element_openstreetmap %}
+    <div class="cms-element-openstreetmap">
+        {% block element_openstreetmap_inner %}
+            <div class="sweb-openstreetmap" data-sweb-openstreetmap="{{ element.translated.config|json_encode }}">
+                <div id="map"></div>
+            </div>
+        {% endblock %}
+    </div>
+{% endblock %}
