@@ -1,0 +1,11 @@
+.sw-cms-el-preview-openstreetmap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sw-cms-el-preview-openstreetmap-img {
+        display: block;
+        max-height: 100%;
+    }
+}

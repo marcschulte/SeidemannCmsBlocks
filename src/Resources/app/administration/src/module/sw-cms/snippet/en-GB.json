@@ -1,0 +1,25 @@
+{
+    "sweb-cms-blocks": {
+        "elements": {
+            "customOpenStreetMapElement": {
+                "label": "OpenStreetMap",
+                "config": {
+                    "longitudeLabel": "Longitude",
+                    "longitudePlaceholder": "Enter longitude...",
+                    "latitudeLabel": "Latitude",
+                    "latitudePlaceholder": "Enter latitude...",
+                    "zoomLabel": "Zoom",
+                    "zoomPlaceholder": "Enter zoom...",
+                    "nameLabel": "Name",
+                    "namePlaceholder": "Enter name...",
+                    "streetLabel": "Street and number",
+                    "streetPlaceholder": "Enter street and number...",
+                    "cityLabel": "Postcode and city",
+                    "cityPlaceholder": "Enter postcode and city...",
+                    "logoLabel": "Logo URL",
+                    "logoPlaceholder": "Enter logo URL..."
+                }
+            }
+        }
+    }
+}
